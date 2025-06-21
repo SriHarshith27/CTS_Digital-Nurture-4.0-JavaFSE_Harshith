@@ -1,44 +1,39 @@
-# 🗂️ Task Management System
+# Task Management System
 
-## ✅ Objective
-Develop a task management system using a **singly linked list** to manage tasks dynamically. Tasks can be added, searched, displayed, and deleted.
+## 🧠 Understanding
 
----
+This exercise implements a **singly linked list** to manage tasks dynamically.
 
-## 🧠 Understanding: Linked Lists
+### Features:
+- Add a task
+- Search task by ID
+- Delete task by ID
+- Display all tasks
 
-### 🔹 Types of Linked Lists:
-- **Singly Linked List**: Each node points only to the next node.
-- **Doubly Linked List**: Each node points to both the next and previous nodes.
-
-### 🔹 Why Linked List?
-- Unlike arrays, linked lists allow dynamic memory allocation.
-- Insertion and deletion are more efficient (no shifting required).
-
----
-
-
-## 🚀 Functionalities
-
-| Operation       | Description                                 | Time Complexity |
-|----------------|---------------------------------------------|------------------|
-| Add Task        | Insert at the end of the list               | O(n)             |
-| Search Task     | Find task by `taskId`                       | O(n)             |
-| Delete Task     | Remove task by `taskId`                     | O(n)             |
-| Display Tasks   | Print all tasks in order                    | O(n)             |
+### Singly Linked List Representation:
+- Each node stores a `Task` and a reference to the next node.
+- Memory is allocated dynamically (no fixed size).
+- Nodes are **not stored contiguously**, unlike arrays.
 
 ---
 
 ## 📊 Analysis
 
-### ✅ Advantages of Linked List over Array:
-- **Dynamic size** (no need to predefine array size).
-- Efficient **insertion/deletion** (no shifting elements).
-- Useful for **queue**, **stack**, and **graph** implementations.
+| Operation     | Time Complexity | Description                         |
+|---------------|------------------|-------------------------------------|
+| Add Task      | O(n)             | Traverse to end and append          |
+| Search Task   | O(n)             | Linear traversal                    |
+| Traverse      | O(n)             | Loop through nodes                  |
+| Delete Task   | O(n)             | Requires finding and relinking      |
 
-### ❌ Limitations:
-- No random access (must traverse linearly).
-- Uses extra memory for pointers.
+### Advantages over Arrays:
+- Dynamic size (grow/shrink as needed)
+- Efficient insertions/deletions (especially at the beginning)
 
+### Limitations:
+- No random access (must traverse to find a node)
+- Extra memory for pointers
 
-
+### When to Use Linked Lists:
+- When data size is unknown or changes frequently
+- When frequent insertions/deletions are expected
