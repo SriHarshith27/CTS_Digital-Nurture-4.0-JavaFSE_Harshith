@@ -1,47 +1,38 @@
 # 💸 Financial Forecasting Tool
 
-## ✅ Objective
-Build a recursive method to forecast future financial value based on past growth rates.
+## 🧠 Understanding
 
----
+This tool forecasts future financial values using **recursion** and **compound growth** formulas.
 
-## 🔁 Recursion Concept
+### ✨ Features
+- Recursive forecast function
+- Optimized formula-based method
+- Supports yearly compound interest growth
 
-Recursion breaks a problem into smaller parts by calling the same method within itself.  
-Useful for problems that have a natural recursive structure like exponentiation or time-based compounding.
+### 🔁 Recursion Formula
 
----
 
-## 📈 Forecast Formula
-
-Future Value after `n` years:
-
-Recursive logic:
-
----
-
-## 🧱 Implementation Summary
-
-| Method                | Description                                  |
-|-----------------------|----------------------------------------------|
-| `forecast()`          | Recursive calculation of future value        |
-| `optimizedForecast()` | Constant-time solution using `Math.pow()`    |
+Where:
+- `P` = Present Value
+- `r` = Growth Rate (e.g., 0.1 for 10%)
+- `y` = Number of years
 
 ---
 
 ## 📊 Analysis
 
-| Metric        | Recursive Version | Optimized Version |
-|---------------|--------------------|--------------------|
-| Time          | O(n)               | O(1)               |
-| Space         | O(n) (call stack)  | O(1)               |
-| Risk          | Stack overflow     | Stable             |
+| Method               | Time Complexity | Space Complexity | Description                      |
+|----------------------|------------------|-------------------|----------------------------------|
+| Recursive Forecast   | O(n)             | O(n) (call stack) | Recursive compounding            |
+| Optimized Forecast   | O(1)             | O(1)              | Uses `Math.pow()` directly       |
 
----
+### ✅ When to Use
+- **Recursive**: Educational/short time horizon
+- **Optimized**: Real-time applications or large inputs
 
-## 📌 Conclusion
+### ⚠️ Limitation
+- Recursive method can cause **stack overflow** for large `n`
 
-- Use recursion for learning or small datasets.
-- Prefer optimized mathematical methods for real applications.
+### 🧠 Best Practice
+Use the optimized formula for performance-sensitive or large-scale systems:
 
----
