@@ -1,0 +1,44 @@
+# 🗂️ Task Management System
+
+## ✅ Objective
+Develop a task management system using a **singly linked list** to manage tasks dynamically. Tasks can be added, searched, displayed, and deleted.
+
+---
+
+## 🧠 Understanding: Linked Lists
+
+### 🔹 Types of Linked Lists:
+- **Singly Linked List**: Each node points only to the next node.
+- **Doubly Linked List**: Each node points to both the next and previous nodes.
+
+### 🔹 Why Linked List?
+- Unlike arrays, linked lists allow dynamic memory allocation.
+- Insertion and deletion are more efficient (no shifting required).
+
+---
+
+
+## 🚀 Functionalities
+
+| Operation       | Description                                 | Time Complexity |
+|----------------|---------------------------------------------|------------------|
+| Add Task        | Insert at the end of the list               | O(n)             |
+| Search Task     | Find task by `taskId`                       | O(n)             |
+| Delete Task     | Remove task by `taskId`                     | O(n)             |
+| Display Tasks   | Print all tasks in order                    | O(n)             |
+
+---
+
+## 📊 Analysis
+
+### ✅ Advantages of Linked List over Array:
+- **Dynamic size** (no need to predefine array size).
+- Efficient **insertion/deletion** (no shifting elements).
+- Useful for **queue**, **stack**, and **graph** implementations.
+
+### ❌ Limitations:
+- No random access (must traverse linearly).
+- Uses extra memory for pointers.
+
+
+
