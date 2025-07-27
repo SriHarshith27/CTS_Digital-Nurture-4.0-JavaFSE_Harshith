@@ -1,0 +1,19 @@
+/* CohortDetails.module.css */
+
+.box {
+  width: 300px;
+  display: inline-block;
+  margin: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Added for better visual separation */
+  vertical-align: top; /* Align boxes at the top */
+}
+
+dt { 
+  font-weight: 500;
+}

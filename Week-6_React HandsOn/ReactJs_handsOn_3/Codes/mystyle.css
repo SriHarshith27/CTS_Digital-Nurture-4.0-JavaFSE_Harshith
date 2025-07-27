@@ -1,0 +1,27 @@
+.Name {
+  font-weight: 300;
+  color: blue;
+}
+
+.School {
+  color: crimson;
+}
+
+.Total {
+  color: darkmagenta;
+}
+
+.formatstyle {
+  text-align: center;
+  font-size: large;
+  border: 1px solid #ccc; /* Added for better visual separation */
+  padding: 20px;
+  margin: 20px auto; /* Center the div */
+  max-width: 400px; /* Limit width for readability */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* Added for better visual separation */
+}
+
+.Score {
+  color: forestgreen;
+  font-weight: bold; /* Added for emphasis */
+}
